@@ -14,17 +14,39 @@ package main
 import (
 	// "fmt"
 	"fmt"
-
-	"github.com/henryflores01/cursogo/variables"
+	"runtime"
+	// "github.com/henryflores01/cursogo/variables"
 )
 
 // funcion principal
 func main() {
 	// imprimir en consola con un salto de linea
 	// fmt.Println("Hola mundo")
-	variables.MostrarEnteros()
-	variables.RestoVariables()
-	estado, texto := variables.ConviertoATexto(1588)
-	fmt.Println(estado, texto)
+	// variables.MostrarEnteros()
+	// variables.RestoVariables()
+	// estado, texto := variables.ConviertoATexto(1588)
+	// fmt.Println(estado, texto)
+
+	// IF - IF ELSE - ELSE
+	// os := runtime.GOOS
+	if os := runtime.GOOS; os == "linux" || os == "OS X." {
+		fmt.Println("Esto no es windows, es: ", os)
+	} else if os == "darwin" {
+		fmt.Println("Esto no es windows, es: ", os)
+	} else {
+		fmt.Println("Esto es windows")
+	}
+
+	// Switch
+	switch os := runtime.GOOS; os {
+	case "linux":
+		fmt.Println("Es linux")
+	case "darwin":
+		fmt.Println("Es darwin")
+	case "windows":
+		fmt.Println("Es windows")
+	default:
+		fmt.Printf("Es: %s\n", os)
+	}
 
 }
