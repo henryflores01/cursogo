@@ -13,9 +13,11 @@ package main
 // para importar varios paquetes usamos un parentesis
 import (
 	// "fmt"
-	"fmt"
-	"runtime"
+	// "runtime"
 	// "github.com/henryflores01/cursogo/variables"
+	"fmt"
+
+	"github.com/henryflores01/cursogo/ejercicios"
 )
 
 // funcion principal
@@ -29,24 +31,26 @@ func main() {
 
 	// IF - IF ELSE - ELSE
 	// os := runtime.GOOS
-	if os := runtime.GOOS; os == "linux" || os == "OS X." {
-		fmt.Println("Esto no es windows, es: ", os)
-	} else if os == "darwin" {
-		fmt.Println("Esto no es windows, es: ", os)
-	} else {
-		fmt.Println("Esto es windows")
-	}
+	// if os := runtime.GOOS; os == "linux" || os == "OS X." {
+	// 	fmt.Println("Esto no es windows, es: ", os)
+	// } else if os == "darwin" {
+	// 	fmt.Println("Esto no es windows, es: ", os)
+	// } else {
+	// 	fmt.Println("Esto es windows")
+	// }
 
-	// Switch
-	switch os := runtime.GOOS; os {
-	case "linux":
-		fmt.Println("Es linux")
-	case "darwin":
-		fmt.Println("Es darwin")
-	case "windows":
-		fmt.Println("Es windows")
-	default:
-		fmt.Printf("Es: %s\n", os)
-	}
+	// // Switch
+	// switch os := runtime.GOOS; os {
+	// case "linux":
+	// 	fmt.Println("Es linux")
+	// case "darwin":
+	// 	fmt.Println("Es darwin")
+	// case "windows":
+	// 	fmt.Println("Es windows")
+	// default:
+	// 	fmt.Printf("Es: %s\n", os)
+	// }
 
+	numero, mensaje := ejercicios.ConvertirNumero("21")
+	fmt.Println(numero, mensaje)
 }
