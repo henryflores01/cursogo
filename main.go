@@ -13,7 +13,9 @@ package main
 // para importar varios paquetes usamos un parentesis
 import (
 	// "fmt"
-	"github.com/henryflores01/variables"
+	"fmt"
+
+	"github.com/henryflores01/cursogo/variables"
 )
 
 // funcion principal
@@ -21,5 +23,8 @@ func main() {
 	// imprimir en consola con un salto de linea
 	// fmt.Println("Hola mundo")
 	variables.MostrarEnteros()
+	variables.RestoVariables()
+	estado, texto := variables.ConviertoATexto(1588)
+	fmt.Println(estado, texto)
 
 }
