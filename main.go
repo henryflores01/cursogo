@@ -15,9 +15,10 @@ import (
 	// "fmt"
 	// "runtime"
 	// "github.com/henryflores01/cursogo/variables"
-	"github.com/henryflores01/cursogo/ejercicios"
+	// "github.com/henryflores01/cursogo/ejercicios"
 	// "github.com/henryflores01/cursogo/teclado"
 	// "github.com/henryflores01/cursogo/iteraciones"
+	"github.com/henryflores01/cursogo/files"
 )
 
 // funcion principal
@@ -59,5 +60,9 @@ func main() {
 
 	// iteraciones.Iterar()
 
-	ejercicios.PedirNumero()
+	// fmt.Println(ejercicios.TablaDeMultiplicar())
+
+	// files.GrabarTabla(ejercicios.TablaDeMultiplicar())
+	// files.SumarTabla(ejercicios.TablaDeMultiplicar())
+	files.LeoArchivo()
 }
