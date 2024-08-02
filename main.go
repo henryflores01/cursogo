@@ -20,7 +20,8 @@ import (
 	// "github.com/henryflores01/cursogo/iteraciones"
 	// "github.com/henryflores01/cursogo/files"
 	// "github.com/henryflores01/cursogo/funciones"
-	"github.com/henryflores01/cursogo/arreglos_slices"
+	// "github.com/henryflores01/cursogo/arreglos_slices"
+	"github.com/henryflores01/cursogo/mapas"
 )
 
 // funcion principal
@@ -74,5 +75,7 @@ func main() {
 
 	// arreglos_slices.MuestroArreglos()
 	// arreglos_slices.MuestroSlice()
-	arreglos_slices.Capacidad()
+	// arreglos_slices.Capacidad()
+
+	mapas.MostrarMapas()
 }
