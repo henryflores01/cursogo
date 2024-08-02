@@ -19,7 +19,8 @@ import (
 	// "github.com/henryflores01/cursogo/teclado"
 	// "github.com/henryflores01/cursogo/iteraciones"
 	// "github.com/henryflores01/cursogo/files"
-	"github.com/henryflores01/cursogo/funciones"
+	// "github.com/henryflores01/cursogo/funciones"
+	"github.com/henryflores01/cursogo/arreglos_slices"
 )
 
 // funcion principal
@@ -68,5 +69,10 @@ func main() {
 	// files.LeoArchivo()
 
 	// funciones.Calculos()
-	funciones.LlamarClosure()
+	// funciones.LlamarClosure()
+	// funciones.Exponencia(2)
+
+	// arreglos_slices.MuestroArreglos()
+	// arreglos_slices.MuestroSlice()
+	arreglos_slices.Capacidad()
 }
