@@ -15,9 +15,8 @@ import (
 	// "fmt"
 	// "runtime"
 	// "github.com/henryflores01/cursogo/variables"
-	"fmt"
-
-	"github.com/henryflores01/cursogo/ejercicios"
+	// "github.com/henryflores01/cursogo/ejercicios"
+	"github.com/henryflores01/cursogo/teclado"
 )
 
 // funcion principal
@@ -51,6 +50,9 @@ func main() {
 	// 	fmt.Printf("Es: %s\n", os)
 	// }
 
-	numero, mensaje := ejercicios.ConvertirNumero("21")
-	fmt.Println(numero, mensaje)
+	// numero, mensaje := ejercicios.ConvertirNumero("21")
+	// fmt.Println(numero, mensaje)
+
+	// captura de datos por teclado
+	teclado.IngresoNumeros()
 }
