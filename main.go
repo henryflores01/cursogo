@@ -18,7 +18,8 @@ import (
 	// "github.com/henryflores01/cursogo/ejercicios"
 	// "github.com/henryflores01/cursogo/teclado"
 	// "github.com/henryflores01/cursogo/iteraciones"
-	"github.com/henryflores01/cursogo/files"
+	// "github.com/henryflores01/cursogo/files"
+	"github.com/henryflores01/cursogo/funciones"
 )
 
 // funcion principal
@@ -64,5 +65,8 @@ func main() {
 
 	// files.GrabarTabla(ejercicios.TablaDeMultiplicar())
 	// files.SumarTabla(ejercicios.TablaDeMultiplicar())
-	files.LeoArchivo()
+	// files.LeoArchivo()
+
+	// funciones.Calculos()
+	funciones.LlamarClosure()
 }
