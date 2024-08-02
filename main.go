@@ -22,7 +22,9 @@ import (
 	// "github.com/henryflores01/cursogo/funciones"
 	// "github.com/henryflores01/cursogo/arreglos_slices"
 	// "github.com/henryflores01/cursogo/mapas"
-	"github.com/henryflores01/cursogo/users"
+	// "github.com/henryflores01/cursogo/users"
+	"github.com/henryflores01/cursogo/ejer_interfaces"
+	"github.com/henryflores01/cursogo/modelos"
 )
 
 // funcion principal
@@ -79,5 +81,10 @@ func main() {
 	// arreglos_slices.Capacidad()
 
 	// mapas.MostrarMapas()
-	users.AltaUsuario()
+	// users.AltaUsuario()
+
+	Henry := new(modelos.Hombre)
+	Clari := new(modelos.Mujer)
+	ejer_interfaces.HumanosRespirando(Henry)
+	ejer_interfaces.HumanosRespirando(Clari)
 }
