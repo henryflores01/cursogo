@@ -15,8 +15,9 @@ import (
 	// "fmt"
 	// "runtime"
 	// "github.com/henryflores01/cursogo/variables"
-	// "github.com/henryflores01/cursogo/ejercicios"
-	"github.com/henryflores01/cursogo/teclado"
+	"github.com/henryflores01/cursogo/ejercicios"
+	// "github.com/henryflores01/cursogo/teclado"
+	// "github.com/henryflores01/cursogo/iteraciones"
 )
 
 // funcion principal
@@ -54,5 +55,9 @@ func main() {
 	// fmt.Println(numero, mensaje)
 
 	// captura de datos por teclado
-	teclado.IngresoNumeros()
+	// teclado.IngresoNumeros()
+
+	// iteraciones.Iterar()
+
+	ejercicios.PedirNumero()
 }
