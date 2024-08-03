@@ -12,8 +12,7 @@ package main
 
 // para importar varios paquetes usamos un parentesis
 import (
-	"fmt"
-
+	// "fmt"
 	// "runtime"
 	// "github.com/henryflores01/cursogo/variables"
 	// "github.com/henryflores01/cursogo/ejercicios"
@@ -27,7 +26,8 @@ import (
 	// "github.com/henryflores01/cursogo/ejer_interfaces"
 	// "github.com/henryflores01/cursogo/modelos"
 	// "github.com/henryflores01/cursogo/defer_painic_recover"
-	"github.com/henryflores01/cursogo/goroutines"
+	// "github.com/henryflores01/cursogo/goroutines"
+	"github.com/henryflores01/cursogo/webserver"
 )
 
 // funcion principal
@@ -109,10 +109,12 @@ func main() {
 	// }
 
 	// CANALES
-	canal := make(chan bool)
+	// canal := make(chan bool)
 
-	go goroutines.MiNombreLento("Henry", canal)
-	fmt.Println("Estoy aqui")
+	// go goroutines.MiNombreLento("Henry", canal)
+	// fmt.Println("Estoy aqui")
 
-	<-canal // esto es un await
+	// <-canal // esto es un await
+
+	webserver.MiWebserver()
 }
