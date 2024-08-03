@@ -12,7 +12,8 @@ package main
 
 // para importar varios paquetes usamos un parentesis
 import (
-	// "fmt"
+	"fmt"
+
 	// "runtime"
 	// "github.com/henryflores01/cursogo/variables"
 	// "github.com/henryflores01/cursogo/ejercicios"
@@ -25,7 +26,8 @@ import (
 	// "github.com/henryflores01/cursogo/users"
 	// "github.com/henryflores01/cursogo/ejer_interfaces"
 	// "github.com/henryflores01/cursogo/modelos"
-	"github.com/henryflores01/cursogo/defer_painic_recover"
+	// "github.com/henryflores01/cursogo/defer_painic_recover"
+	"github.com/henryflores01/cursogo/goroutines"
 )
 
 // funcion principal
@@ -91,6 +93,26 @@ func main() {
 
 	// defer_painic_recover.VemosDefer()
 	// defer_painic_recover.EjemploPanic()
-	defer_painic_recover.EjemploRecover()
+	// defer_painic_recover.EjemploRecover()
 
+	// MUNDO ASINCRONO
+
+	// Se usa la palabra reservada go para hacerlo asincrona
+	// Si no hay otra cosa que hacer despues de la gorutina, el programa
+	// puede finalizar antes de que se acabe la gorutina
+	// go goroutines.MiNombreLento("Henry")
+
+	// bucle infinito para evitar que se acabe el programa
+	// y finalice de manera correcta la gorutina
+	// for {
+
+	// }
+
+	// CANALES
+	canal := make(chan bool)
+
+	go goroutines.MiNombreLento("Henry", canal)
+	fmt.Println("Estoy aqui")
+
+	<-canal // esto es un await
 }
