@@ -23,8 +23,9 @@ import (
 	// "github.com/henryflores01/cursogo/arreglos_slices"
 	// "github.com/henryflores01/cursogo/mapas"
 	// "github.com/henryflores01/cursogo/users"
-	"github.com/henryflores01/cursogo/ejer_interfaces"
-	"github.com/henryflores01/cursogo/modelos"
+	// "github.com/henryflores01/cursogo/ejer_interfaces"
+	// "github.com/henryflores01/cursogo/modelos"
+	"github.com/henryflores01/cursogo/defer_painic_recover"
 )
 
 // funcion principal
@@ -83,8 +84,13 @@ func main() {
 	// mapas.MostrarMapas()
 	// users.AltaUsuario()
 
-	Henry := new(modelos.Hombre)
-	Clari := new(modelos.Mujer)
-	ejer_interfaces.HumanosRespirando(Henry)
-	ejer_interfaces.HumanosRespirando(Clari)
+	// Henry := new(modelos.Hombre)
+	// Clari := new(modelos.Mujer)
+	// ejer_interfaces.HumanosRespirando(Henry)
+	// ejer_interfaces.HumanosRespirando(Clari)
+
+	// defer_painic_recover.VemosDefer()
+	// defer_painic_recover.EjemploPanic()
+	defer_painic_recover.EjemploRecover()
+
 }
